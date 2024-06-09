@@ -14,9 +14,9 @@
     <meta property="og:image" content="/developer-progress/descargar.jpeg"> <!--Así podemos poner una imagen para previsualización-->
     <meta property="og:image:alt" content="una descripción de la imagen que pusimos"> <!--Esta es una breve descripción de la imagen que acabamos de añadir-->
     <title>Curso de Programación</title>
-    <link rel="icon" href="/descarga.jpeg" />
+    <link rel="icon" href="/images/descarga.jpeg" />
     <!--De esta manera podemos establecer el favicon en la pestaña de arriba-->
-    <link rel="stylesheet" type="image/jpeg" href="/Curso de HTML/style.css"> <!--Es así cómo se añade una página para darle estilos a nuestro código-->
+    <link rel="stylesheet" href="/css-course.css"> <!--Es así cómo se añade una página para darle estilos a nuestro código-->
 
     <!--Si tenemos una página en español y en Inglés podemos poner que la página en español o ingles alternativa es esta o la otra, para esto usamos la siguiente etiqueta-->
     <link rel="alternate" href="link.de.la.página.alternativa.com/en-GB"> <!--Esto indicaria que esta misma página en inglés britanico es la otra-->
@@ -25,17 +25,17 @@
     <!--También podemos añadir estilos a los fondos y algunos estilos mas desde la etiqueta style-->
     <style>
       body {
-        background: rgb(208, 190, 127);
+        background: rgb(255, 255, 255);
       }
     </style>
   </head>
+  
   <header>
     <h1>Curso de HTML todo lo que necesitamos saber</h1>
     <p>Vamos a ver los primeros conceptos a tener en cuenta para poder aprender este idioma/lenguaje de programación.</p>
     <h4>HTML Significado - Etiquetas - Atributos</h4>
     <p>HTML: (Hyper Text Markup Language) es un lenguaje de marcado de hipertexto que nos ayuda constantemente a distribuir las cajas de nuestra página web, tomando en cuenta que html no se usa para dar estilos o para alguna otra función aparte de la de incrustar nuestro contenido.</p>
     <p>Principalmente se usan las etiquetas para describir nuestro contenido, es decir, en este momento, los parrafos que estás leyendo se hacen con una etiqueta que lo que describen son los parrafos, a las etiquetas expresadas de esta manera "< etiqueta de apertura > </ etiqueta de cierre >" las podemos conocer por su característica de tener que cerrarlas, hay otras que son etiquetas de auto-cierre las cuales no vamos a necesitar cerrar así "</-->" </p>
-  </header>
   <nav>
     <ul>
       <li>Así es cómo se crea una barra de navegación</li>
@@ -49,20 +49,22 @@
     </p>
   </nav>
 </header>
+<main>
 <body>  
+  <div>
   <h2>Curso de HTML (aprendido de midudev)</h2>
 
   <p>
     Este parrafo está creado para poder ir viendo las diferencias de lo que
-    hacemos, por ejemplo
-    <b>aquí estamos usando la etiqueta anterior mensionada "b"</b> sin embargo
-    ahora vamos a quitarla y a <strong>usar la etiqueta de strong</strong>
+    hacemos, por ejemplo<b>aquí estamos usando la etiqueta anterior mensionada "b"</b> sin embargo ahora vamos a quitarla y a <strong>usar la etiqueta de strong</strong>
   </p>
   <p>
     Ahora te explicaré tal cual cómo poner nosotros nuestros iconos en las pestañas de nuestro web, para esto debemos usar la etiqueta <b>"link"</b> con el atributo <b>"rel=icon"</b> y <b>"href"</b>b para mostrar donde tenemos el logo u objeto que queremos poner para nuestra pestaña.
   </p>
+</div>
+<span>
   <ul>
-    Estas son listas desordenadas
+    <article>Estas son listas desordenadas</article>
     <li>Una de las demostraciones</li>
     <li>para que veas que no cumple ningun orden o no deja distinguirlo</li>
   </ul>
@@ -72,11 +74,13 @@
     <li>primera en lista</li>
     <li>segundo en lista</li>
   </ol>
+</span>
 
+<section>
   <p>También podemos poner imágenes</p>
   <img
     title="Foto de una hoja"
-    src="/descarga.jpeg"
+    src="/images/descarga.jpeg"
     alt="Esta es una descripción de la imagen que hemos subido"
   />
   <p>
@@ -103,33 +107,97 @@
     "src" para poder buscar la ruta de la imagen que queremos. Source es una
     variable y un atributo de esta etiqueta.
   </p>
+</section>
+<span>
   <p>
     Ahora veremos la etiqueta input, que tiene muchos tipos, de manera que
     podemos ayudarnos para poner lo que queramos, este input es también una
     etiqueta de autocierre, esto ocurre porque img e input son reemplazables.
   </p>
   <input type="text" />
+  <p>Si queremos que nos quede algún tipo de texto dentro de este mismo cuadro de texto lo que hacemos es definir un placehoolder, por ejemplo</p>
+  <input type="text" placeholder="password" type="password">
+</span>
+<aside>
   <h2>Atributo ID y Class</h2>
-  <p>
+    <p>
     El atributo id debe ser solo para identificar un objeto una sola vez, y no
     es repetible. Aunque también usamos el class para identificar, podemos
     repetir el nombre en varios objetos para que estos queden con una
     identificación.
-  </p>
-  <p>
+    </p>
+    <p>
     para escribir tres lineas seguidas en vscode podemos apretar la tecla
     cmd y alt a la misma vez y dirigirnos hacia abajo o arriba y tener tres cursores para
     escribir
-  </p>
-  <p><b>Es una etiqueta de "bold" o "negrita" no se recomienda usar </b>otra
+    </p>
+    <p><b>Es una etiqueta de "bold" o "negrita" no se recomienda usar </b>otra
     etiqueta llamada strong</p><strong>debido a que strong si describe bien el texto en vez de estilarlo, esto
     ayuda mucho al SEO por lo tanto la etiqueta "b" se considera
     obsoleta</strong>
-  </p>
-<p>
-En el mismo contexto, también podemos usar la etiqueta <em>"em" y se usa para poner la letra en cursiva</em> que se usa igual que el strong solamente que ahora lo podemos usar para simplemente dar énfasis, es decir, en semántica sería un nivel más bajo de lo que queda la etiqueta <strong>"strong"</strong> </p>
-<p>
-  Después de que veas el código y puedas ver que puse el idioma en "Es", por lo tanto ya podemos hacer uso de la "ñ"
-</p>
+    </p>
+    <p>
+      En el mismo contexto, también podemos usar la etiqueta <em>"em" y se usa para poner la letra en cursiva</em> que se usa igual que el strong solamente que ahora lo podemos usar para simplemente dar énfasis, es decir, en semántica sería un nivel más bajo de lo que queda la etiqueta <strong>"strong"</strong> 
+    </p>
+    <p>
+      Después de que veas el código y puedas ver que puse el idioma en "Es", por lo tanto ya podemos hacer uso de la "ñ"
+    </p>
+  </aside>
+
+  <section>
+    <span>algunos conceptos importantes</span>
+      <h4>HTML SEMÁNTICO</h4>
+        <p>Semántico significa que tiene sicnificado, para esto usamos etiquetas, de esta manera le damos un significado a cada parte de la página que estemos creando</p>
+      <h4>Etiqueta "span"</h4>
+        <p>La etiqueta span se usa para aplicar estilo al texto o agrupar elementos en linea. Esto también sirve mucho para cuando queramos estilar solo una parte del texto, envolvemos la parte del testo que queramos estilar con span y luego vamos al css y estilamos</p>
+      <h4>Etiqueta "div"</h4>
+        <p>Cómo su nombre lo indica el div se usa para agrupar elementos-aplicar divisiones lógicas en el contenido de una página web.</p>
+      <h4>Etiqueta "article" </h4>
+        <p>Esta etiqueta article deve tener una información que aunque la quitemos del lugar en el que esté puesto, y lo desplacemos a otro sitio, va a seguir teniendo sentido. Independiente.</p>
+        <h4>Etiqueta "aside"</h4>
+        <p>
+          Esta etiqueta representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento. Dependiente del documento.
+        </p>
+        <h4>Etiqueta "main"</h4>
+        <p>El main engloba todo el contenido principal de la página, es decir, lo que abarca en el concepto que se hace llamar principal, si hay una pagina de ventas, abarca toda la parte de ventas menos, de la información adicional</p>
+        <h4>Etiqueta "section"</h4>
+        <p>Sirve para abarcar secciones independientes genericas de un doumento, también pueden haber secciones y sub-secciones </p>
+        <h4>Etiqueta "header"</h4>
+        <p>Aunque muchas personas creen que solo se puede usar una vez, realmente el header es una etiqueta que podemos usarla muchas veces para indicar headers incluso de partes de la misma página, al igual que el footer, hay una diferencia entre un header y top-header.</p>
+        <h4>Etiqueta "button"</h4>
+        <p>Esta nos ayuda para crear botones.</p>
+        <h4>Atributo "role"</h4>
+        <p>Hace que los objetos hagan un rol en sí, de manera que podamos hacer que un div, sea un boton, por ejemplo, aunque en programación el div no puede ser boton por cuestiones de semantica. Pero básicamente esa es su funcionalidad.</p>
+</section>
+
+<article>
+  <section>
+  <h4>Etiqueta anchor</h4>
+  <p>Esta etiqueta nos permite navegar, no solo dentro de la página, si no para afuera tambien, esta es una etiqueta vital a la hora de crear páginas web. A continuación te muestro cómo.</p>
+</section>
+<div>
+  <span>Aquí muestro como se añade un link para poder navegar dentro de la misma página.</span>
+  <a href="https://facebook.com">Link de Facebook</a>
+  <span>si queremos que se vaya a otra pestaña, usamos el atributo target y definimos en _blank, por ejemplo: </span>
+  <a href="https://facebook.com" target="_blank">facebook</a>
+  <p>Para navegaciones internas, usamos en el anchro y el atributo href lo siguiente: "href="#palabra que queremos que se busque", luego buscamos a donde nos quiere llevar usamos la etiqueta id y ponemos el nombre de lo que hemos puesto en el href</p>
+  <p>Por cuestiones de seguridad, usamos el atributo "rel" con su respectiva información en no-referrer, por ejemplo:</p>
+  <a href="https://facebook.com" target="_blank" rel="no-referrer"></a>
+  <p>De esta manera evitamos que se envíe información a la otra página que no queramos que se comparta</p>
+  <p>En la parte de anchors, también tenemos algunos especiales que hacen diferentes acciones, por ejemplo, enviar correos, llamar, etc. Para esto voy a dejar una lista de atributo href con estas funcionalidades, cabe recalcar que cada palabra o comando que escriba va dentro de "href=""" y sus comillas.</p>
+  <ol>
+    <li>mailto:correoquequeremos@gmail.com</li>
+    <li>tel:+57311000333444</li>
+  </ol>
+  <p>estos se llaman protocolos, podemos encontrar listas de estos para añadir funcionalidades a nuestra página web.</p>
+  <h4>Incluso hay otros atributos en anchors</h4>
+  <p>Para que se pueda descargar una imagen, podemos añadir el atributo "download" por ejemplo </p>
+  <a download href="images/descarga.jpeg">
+    <img src="images/descarga.jpeg" alt="una hoja para descargar">
+  </a>
+  <p>Esto se puede hacer si en nuestro anchor añadimos una imagen, y luego ponemos el atributo download, y este download solo funciona con archivos en nuestros dominios.</p>
+</div>
+</article>
   </body>
+</main>
 </html>

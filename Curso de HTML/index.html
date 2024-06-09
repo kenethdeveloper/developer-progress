@@ -1,101 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso de HTML</title>
+<html lang="Es"> <!--Este es el idioma en el cual vamos a expedir nuestra página web-->
+  <head> <!-- Este es el header, aquí van los meta datos y todas las descripciones que vamos a hacer, cómo el título de la pestaña-->
+    <meta charset="UTF-8" /> <!--Estos son metadatos, aquí estamos especificando la codificación del archivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--estamos estableciendo el puerto en el cual se expiden los datos o el viewport, esto lo que hace es que puedas establecer el tamaño de la pantalla y hacer responsives desings-->
+    <meta name="robots" content="index, follow"> <!--Este es un metadato importante si necesitamos indexar la página o seguir enlaces-->
+    <meta name="theme-color" content="blue"> <!--Hay metadatos para navegadores en concreto, redes sociales, etc, en este caso funciona para safari-->
+    <meta name="description" content="Curso de HTML para practicar"> <!--Esto para el seo, es muy importante para añadir descripciones de la página y esta descripción se puede poner abajo de nuestro titulo en google-->
+
+    <!--OPEN GRAPH estas etiquetas las creó facebook para que se pueda compartir imágenes y previsualizaciones de una buena manera-->
+    <!--Entonces los metadatos quedarían tal que así:-->
+    <meta property="og:title" content="Curso HTML desarrollado para aprendizaje con midudev"> <!--Este es el título que va a aparecer en la previsualización al compartir-->
+    <meta property="og:description" content="Un buen curso para practicar cuando necesite recopilar conceptos"> <!--Esta sería la descripción de la previsualización-->
+    <meta property="og:image" content="/developer-progress/descargar.jpeg"> <!--Así podemos poner una imagen para previsualización-->
+    <meta property="og:image:alt" content="una descripción de la imagen que pusimos"> <!--Esta es una breve descripción de la imagen que acabamos de añadir-->
+    <title>Curso de Programación</title>
+    <link rel="icon" href="/descarga.jpeg" />
+    <!--De esta manera podemos establecer el favicon en la pestaña de arriba-->
+    <link rel="stylesheet" type="image/jpeg" href="/Curso de HTML/style.css"> <!--Es así cómo se añade una página para darle estilos a nuestro código-->
+
+    <!--Si tenemos una página en español y en Inglés podemos poner que la página en español o ingles alternativa es esta o la otra, para esto usamos la siguiente etiqueta-->
+    <link rel="alternate" href="link.de.la.página.alternativa.com/en-GB"> <!--Esto indicaria que esta misma página en inglés britanico es la otra-->
+    <link rel="canonical" href="la.pagina.principal.de.nuestro.sitio"> <!--esta etiqueta busca mantenernos cómo si fuesemos la página principal, para que google no note que hay páginas duplicadas-->
+
+    <!--También podemos añadir estilos a los fondos y algunos estilos mas desde la etiqueta style-->
+    <style>
+      body {
+        background: rgb(208, 190, 127);
+      }
+    </style>
   </head>
   <header>
-    <h1>HTML</h1>
-    <p>curso aprendido en el canal de youtube de @midudev</p>
-    <nav>
-      <ul>
-        <li>Así es cómo se crea una barra de navegación</li>
-        <li>Usamos varias listas desordenadas</li>
-        <li>Luego simplemente las estilamos</li>
-      </ul>
-      <input type="text" placeholder="Buscar" />
-      <p>
-        Podemos usar el input para crear buscadores y agregarle un atributo
-        placeholder para que adentro aparezca la palabra buscar
-      </p>
-    </nav>
+    <h1>Curso de HTML todo lo que necesitamos saber</h1>
+    <p>Vamos a ver los primeros conceptos a tener en cuenta para poder aprender este idioma/lenguaje de programación.</p>
+    <h4>HTML Significado - Etiquetas - Atributos</h4>
+    <p>HTML: (Hyper Text Markup Language) es un lenguaje de marcado de hipertexto que nos ayuda constantemente a distribuir las cajas de nuestra página web, tomando en cuenta que html no se usa para dar estilos o para alguna otra función aparte de la de incrustar nuestro contenido.</p>
+    <p>Principalmente se usan las etiquetas para describir nuestro contenido, es decir, en este momento, los parrafos que estás leyendo se hacen con una etiqueta que lo que describen son los parrafos, a las etiquetas expresadas de esta manera "< etiqueta de apertura > </ etiqueta de cierre >" las podemos conocer por su característica de tener que cerrarlas, hay otras que son etiquetas de auto-cierre las cuales no vamos a necesitar cerrar así "</-->" </p>
   </header>
-    <h2>Curso de HTML (aprendido de midudev)</h2>
-
-    <p>
-      Este parrafo está creado para poder ir viendo las diferencias de lo que
-      hacemos, por ejemplo
-      <b>aquí estamos usando la etiqueta anterior mensionada "b"</b> sin embargo
-      ahora vamos a quitarla y a <strong>usar la etiqueta de strong</strong>
-    </p>
-    <p>
-      Ahora te explicaré tal cual cómo poner nosotros nuestros iconos en las pestañas de nuestro web, para esto debemos usar la etiqueta <b>"link"</b> con el atributo <b>"rel=icon"</b> y <b>"href"</b>b para mostrar donde tenemos el logo u objeto que queremos poner para nuestra pestaña.
-    </p>
+  <nav>
     <ul>
-      Estas son listas desordenadas
-      <li>Una de las demostraciones</li>
-      <li>para que veas que no cumple ningun orden o no deja distinguirlo</li>
+      <li>Así es cómo se crea una barra de navegación</li>
+      <li>Usamos varias listas desordenadas</li>
+      <li>Luego simplemente las estilamos</li>
     </ul>
+    <input type="text" placeholder="Buscar" />
+    <p>
+      Podemos usar el input para crear buscadores y agregarle un atributo
+      placeholder para que adentro aparezca la palabra buscar
+    </p>
+  </nav>
+</header>
+<body>  
+  <h2>Curso de HTML (aprendido de midudev)</h2>
 
-    <ol>
-      Sin embargo podemos usar listas ordenadas también
-      <li>primera en lista</li>
-      <li>segundo en lista</li>
-    </ol>
+  <p>
+    Este parrafo está creado para poder ir viendo las diferencias de lo que
+    hacemos, por ejemplo
+    <b>aquí estamos usando la etiqueta anterior mensionada "b"</b> sin embargo
+    ahora vamos a quitarla y a <strong>usar la etiqueta de strong</strong>
+  </p>
+  <p>
+    Ahora te explicaré tal cual cómo poner nosotros nuestros iconos en las pestañas de nuestro web, para esto debemos usar la etiqueta <b>"link"</b> con el atributo <b>"rel=icon"</b> y <b>"href"</b>b para mostrar donde tenemos el logo u objeto que queremos poner para nuestra pestaña.
+  </p>
+  <ul>
+    Estas son listas desordenadas
+    <li>Una de las demostraciones</li>
+    <li>para que veas que no cumple ningun orden o no deja distinguirlo</li>
+  </ul>
 
-    <p>También podemos poner imágenes</p>
-    <img
-      title="Foto de una hoja"
-      src="/descarga.jpeg"
-      alt="Esta es una descripción de la imagen que hemos subido"
-    />
-    <p>
-      El atributo title ayuda a que cuando pases el cursor la foto tenga un
-      título para poder mostrar al público. Este ayuda al SEO
-    </p>
-    <p>
-      También podemos estilar la altura y el ancho con los atributos width o
-      height pero eso es en px. Las comillas en los atributos son opcionales,
-      pero es mejor ponerlas.
-    </p>
-    <p>
-      Hay atributos boleanos como hidden, que puede ocultar o mostrar el elemnto
-      en cuanto se lo pida.
-    </p>
-    <p>
-      El atributo alt es para dar una descripción de la imagen cuando hayan
-      errores de la imagen, entonces es la descripción de nuestra imagen sin
-      necesidad de verla. Esto también ayuda mucho a la semántica y SEO.
-    </p>
-    <p>
-      En este caso podemos ver la imagen de una hoja roja, en la etiqueta img,
-      no necesitamos poner cierre de etiqueta. Para buscar el archivo usamos
-      "src" para poder buscar la ruta de la imagen que queremos. Source es una
-      variable y un atributo de esta etiqueta.
-    </p>
-    <p>
-      Ahora veremos la etiqueta input, que tiene muchos tipos, de manera que
-      podemos ayudarnos para poner lo que queramos, este input es también una
-      etiqueta de autocierre, esto ocurre porque img e input son reemplazables.
-    </p>
-    <input type="text" />
-    <h2>Atributo ID y Class</h2>
-    <p>
-      El atributo id debe ser solo para identificar un objeto una sola vez, y no
-      es repetible. Aunque también usamos el class para identificar, podemos
-      repetir el nombre en varios objetos para que estos queden con una
-      identificación.
-    </p>
-    <p>
-      para escribir tres lineas seguidas en vscode podemos apretar la tecla
-      cmd y alt a la misma vez y dirigirnos hacia abajo o arriba y tener tres cursores para
-      escribir
-    </p>
-    <p><b>Es una etiqueta de "bold" o "negrita" no se recomienda usar </b>otra
-      etiqueta llamada strong</p><strong>debido a que strong si describe bien el texto en vez de estilarlo, esto
-      ayuda mucho al SEO por lo tanto la etiqueta "b" se considera
-      obsoleta</strong></p>
-    </body>
+  <ol>
+    Sin embargo podemos usar listas ordenadas también
+    <li>primera en lista</li>
+    <li>segundo en lista</li>
+  </ol>
+
+  <p>También podemos poner imágenes</p>
+  <img
+    title="Foto de una hoja"
+    src="/descarga.jpeg"
+    alt="Esta es una descripción de la imagen que hemos subido"
+  />
+  <p>
+    El atributo title ayuda a que cuando pases el cursor la foto tenga un
+    título para poder mostrar al público. Este ayuda al SEO
+  </p>
+  <p>
+    También podemos estilar la altura y el ancho con los atributos width o
+    height pero eso es en px. Las comillas en los atributos son opcionales,
+    pero es mejor ponerlas.
+  </p>
+  <p>
+    Hay atributos boleanos como hidden, que puede ocultar o mostrar el elemnto
+    en cuanto se lo pida.
+  </p>
+  <p>
+    El atributo alt es para dar una descripción de la imagen cuando hayan
+    errores de la imagen, entonces es la descripción de nuestra imagen sin
+    necesidad de verla. Esto también ayuda mucho a la semántica y SEO.
+  </p>
+  <p>
+    En este caso podemos ver la imagen de una hoja roja, en la etiqueta img,
+    no necesitamos poner cierre de etiqueta. Para buscar el archivo usamos
+    "src" para poder buscar la ruta de la imagen que queremos. Source es una
+    variable y un atributo de esta etiqueta.
+  </p>
+  <p>
+    Ahora veremos la etiqueta input, que tiene muchos tipos, de manera que
+    podemos ayudarnos para poner lo que queramos, este input es también una
+    etiqueta de autocierre, esto ocurre porque img e input son reemplazables.
+  </p>
+  <input type="text" />
+  <h2>Atributo ID y Class</h2>
+  <p>
+    El atributo id debe ser solo para identificar un objeto una sola vez, y no
+    es repetible. Aunque también usamos el class para identificar, podemos
+    repetir el nombre en varios objetos para que estos queden con una
+    identificación.
+  </p>
+  <p>
+    para escribir tres lineas seguidas en vscode podemos apretar la tecla
+    cmd y alt a la misma vez y dirigirnos hacia abajo o arriba y tener tres cursores para
+    escribir
+  </p>
+  <p><b>Es una etiqueta de "bold" o "negrita" no se recomienda usar </b>otra
+    etiqueta llamada strong</p><strong>debido a que strong si describe bien el texto en vez de estilarlo, esto
+    ayuda mucho al SEO por lo tanto la etiqueta "b" se considera
+    obsoleta</strong>
+  </p>
+<p>
+En el mismo contexto, también podemos usar la etiqueta <em>"em" y se usa para poner la letra en cursiva</em> que se usa igual que el strong solamente que ahora lo podemos usar para simplemente dar énfasis, es decir, en semántica sería un nivel más bajo de lo que queda la etiqueta <strong>"strong"</strong> </p>
+<p>
+  Después de que veas el código y puedas ver que puse el idioma en "Es", por lo tanto ya podemos hacer uso de la "ñ"
+</p>
+  </body>
 </html>
-    
